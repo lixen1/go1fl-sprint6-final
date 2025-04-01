@@ -17,7 +17,7 @@ func MainHanler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	file, err := os.ReadFile("/home/lixen/go_progs/go1fl-sprint6-final/index.html")
+	file, err := os.ReadFile("../index.html")
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
